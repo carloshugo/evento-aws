@@ -245,6 +245,7 @@ li {
 table {
 	margin: 20px 0px;
 	border-collapse:collapse;
+	width: 800px;
 	max-width: 800px;
 }
 
