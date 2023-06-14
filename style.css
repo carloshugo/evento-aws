@@ -257,6 +257,10 @@ p.MsoNormal {
 
 section {
 	padding: 80px 30px;
+	background-image: url("img/tech-background.png");
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-size: 500px;
     overflow: hidden;
     width: 100%;
     display: flex;
@@ -405,6 +409,7 @@ img.rede-social {
 
 	section {
 		padding: 50px 25px;
+		background-size: 220px;
 	}
 
 	header {
