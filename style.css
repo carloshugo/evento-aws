@@ -102,7 +102,7 @@ div.sidebaricon-div:active {
 
 nav.sidebar {
 	background: rgb(21,29,44);
-	background: linear-gradient(0deg, rgba(21,29,44,1) 0%, rgba(10,86,186,1) 90%);
+	background: linear-gradient(98deg, rgba(21,29,44,1) 0%, rgb(34 85 153) 90%);
     top: 69px;
     width: 0px;
     height: 100%;
@@ -150,6 +150,19 @@ ul.menu-principal li a:hover {
 	cursor: pointer;
 }
 
+ul.menu-principal li.accessibility {
+	margin-left: 20px;
+}
+
+i.menu-principal {
+	font-size: 20px;
+	margin: 0px 3px;
+}
+
+#diminui {
+	font-size: 15px;
+}
+
 #menu-sidebar {
 	opacity: 0;
 	display: flex;
@@ -164,7 +177,7 @@ ul.menu-principal li a:hover {
 #menu-sidebar li {
 	list-style: none;
     margin: 15px 0px;
-    border-bottom: 1px solid #777;
+    border-bottom: 1px solid #f2f2f2;
     padding: 12px 0px;
 }
 
@@ -224,12 +237,13 @@ p {
 h4 {
 	font-size: 18px;
 	font-weight: 600;
+	text-transform: uppercase;
 	color: #01426A;
 	margin-top: 25px;
 }
 
 iframe {
-	max-width: 800px;
+	max-width: 830px;
 }
 
 ul.lista {
@@ -238,15 +252,15 @@ ul.lista {
 
 li {
 	color: #505050;
-	margin: 3px 0px;
+	margin: 5px 0px;
 	list-style-type: square;
 }
 
 table {
 	margin: 20px 0px;
 	border-collapse:collapse;
-	width: 800px;
-	max-width: 800px;
+	width: 830px;
+	max-width: 830px;
 }
 
 p.MsoNormal {

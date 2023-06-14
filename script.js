@@ -1,6 +1,7 @@
 var sidebarBol = false;
 var slideNum = 2;
 var slideIndex = 1;
+var sizefont = 3;
 
 function navegar(url) {
 	const target = document.getElementById(String(url))
@@ -82,6 +83,98 @@ function scrollCheck() {
 
 	else {
 		scrollE.style.display = 'flex';
+	}
+}
+
+function diminuirTexto() {
+
+	if (sizefont>0) {
+
+	sizefont-=1;
+
+	textoh1 = document.getElementsByTagName("h1");
+	textoh4 = document.getElementsByTagName("h4");
+	textop = document.getElementsByTagName("p");
+	textoli = document.getElementsByTagName("li");
+	textoa = document.getElementsByTagName("a");
+
+	// h1
+	for (let i = 0; i<textoh1.length;i++) {
+		const fontSizeAtual = parseInt(getComputedStyle(textoh1[i]).fontSize);
+    const novoFontSize = fontSizeAtual - 2;
+		textoh1[i].style.fontSize = novoFontSize + "px";
+	}
+
+	for (let i = 0; i<textoh4.length;i++) {
+		const fontSizeAtual = parseInt(getComputedStyle(textoh4[i]).fontSize);
+    const novoFontSize = fontSizeAtual - 2;
+		textoh4[i].style.fontSize = novoFontSize + "px";
+	}
+
+	for (let i = 0; i<textop.length;i++) {
+		const fontSizeAtual = parseInt(getComputedStyle(textop[i]).fontSize);
+    const novoFontSize = fontSizeAtual - 2;
+		textop[i].style.fontSize = novoFontSize + "px";
+	}
+
+	for (let i = 0; i<textoli.length;i++) {
+		const fontSizeAtual = parseInt(getComputedStyle(textoli[i]).fontSize);
+    const novoFontSize = fontSizeAtual - 2;
+		textoli[i].style.fontSize = novoFontSize + "px";
+	}
+
+	for (let i = 0; i<textoa.length;i++) {
+		const fontSizeAtual = parseInt(getComputedStyle(textoa[i]).fontSize);
+    const novoFontSize = fontSizeAtual - 2;
+		textoa[i].style.fontSize = novoFontSize + "px";
+	}
+
+	}
+}
+
+function aumentarTexto() {
+
+	if (sizefont<=6) {
+
+	sizefont+=1;
+
+	textoh1 = document.getElementsByTagName("h1");
+	textoh4 = document.getElementsByTagName("h4");
+	textop = document.getElementsByTagName("p");
+	textoli = document.getElementsByTagName("li");
+	textoa = document.getElementsByTagName("a");
+
+	// h1
+	for (let i = 0; i<textoh1.length;i++) {
+		const fontSizeAtual = parseInt(getComputedStyle(textoh1[i]).fontSize);
+    const novoFontSize = fontSizeAtual + 2;
+		textoh1[i].style.fontSize = novoFontSize + "px";
+	}
+
+	for (let i = 0; i<textoh4.length;i++) {
+		const fontSizeAtual = parseInt(getComputedStyle(textoh4[i]).fontSize);
+    const novoFontSize = fontSizeAtual + 2;
+		textoh4[i].style.fontSize = novoFontSize + "px";
+	}
+
+	for (let i = 0; i<textop.length;i++) {
+		const fontSizeAtual = parseInt(getComputedStyle(textop[i]).fontSize);
+    const novoFontSize = fontSizeAtual + 2;
+		textop[i].style.fontSize = novoFontSize + "px";
+	}
+
+	for (let i = 0; i<textoli.length;i++) {
+		const fontSizeAtual = parseInt(getComputedStyle(textoli[i]).fontSize);
+    const novoFontSize = fontSizeAtual + 2;
+		textoli[i].style.fontSize = novoFontSize + "px";
+	}
+
+	for (let i = 0; i<textoa.length;i++) {
+		const fontSizeAtual = parseInt(getComputedStyle(textoa[i]).fontSize);
+    const novoFontSize = fontSizeAtual + 2;
+		textoa[i].style.fontSize = novoFontSize + "px";
+	}
+
 	}
 }
 
